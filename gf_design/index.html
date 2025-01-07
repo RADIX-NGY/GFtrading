@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>株式会社GFトレーディング様　TOPデザイン案</title>
+
+    <meta name="viewport" content="width=1335" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/slick.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header id="header">
+      <img src="images/logo.png" alt="" id="logo" />
+      <img src="images/menu.png" alt="" id="menu" />
+    </header>
+    <div id="sliderWrap">
+      <img src="images/catch.png" alt="" id="catch" />
+
+      <ul class="slider-1" id="js-slider-1">
+        <li><img src="images/main01.jpg" alt="" /></li>
+        <li><img src="images/main02.jpg" alt="" /></li>
+        <li><img src="images/main03.jpg" alt="" /></li>
+      </ul>
+    </div>
+
+    <div id="Cont">
+      <img src="images/cont.jpg" alt="" />
+    </div>
+
+    <p id="pagetop">
+      <a href="#"><img src="images/pagetop.png" alt="pagetop" /></a>
+    </p>
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/pagetop.js"></script>
+
+    <script>
+      $(function () {
+        $("#js-slider-1").slick({
+          fade: true, // fedeオン
+          speed: 1500, // 画像切り替えにかかる時間（ミリ秒）
+          autoplaySpeed: 3000, // 自動スライド切り替え速度
+          arrows: false, // 矢印表示・非表示
+          autoplay: true, // 自動再生
+          slidesToShow: 1, // スライド表示数
+          slidesToScroll: 1, // スライドする数
+          infinite: true,
+          arrows: false, // 前・次のボタンを表示する
+          dots: false, // ドットナビゲーションを表示する
+          pauseOnHover: false,
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        delay: 100,
+        duration: 1000,
+        easing: "ease-out",
+        once: true,
+      });
+    </script>
+    <script src="js/logo_change.js"></script>
+  </body>
+</html>
